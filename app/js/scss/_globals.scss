@@ -67,8 +67,8 @@ a, a:visited, a:hover {
     &--pall {
         padding-top: 4.375rem;
         padding-bottom: 4.375rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
 
         @include breakpoint-up(large) {
             padding-top: 6rem;
@@ -80,14 +80,14 @@ a, a:visited, a:hover {
         padding-bottom: 2.25rem;
     }
     &--px {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
     }
     &--pl {
-       padding-left: 1.5rem;
+       padding-left: 1.4rem;
     }
     &--pr {
-        padding-right: 1.5rem;
+        padding-right: 1.4rem;
     }
     &--pb {
         padding-bottom: 4.375rem;

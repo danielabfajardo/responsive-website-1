@@ -1,0 +1,65 @@
+.article {
+    background-color: $veryLightGray;
+
+    &__intro {
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(large) {
+            width: 60%;
+        }
+    }
+    &__grid {
+        gap: 1.875rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item { 
+        border-radius: 0.3125rem;
+        overflow: hidden;
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+        transition: all 150ms ease-in-out;
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 47.5%;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 12.5rem;
+    }
+    &__text {
+        padding: 1.8375rem 1.875rem 2.5rem 1.875rem;
+        background-color: $white;
+        color: $grayishBlue;
+
+        @include breakpoint-up(medium) {
+            padding: 1.875rem 1.5625rem;
+        }
+
+    }
+    &__author {
+        font-size: 0.625rem;
+        margin-bottom: 0.75rem;
+    }
+    &__title {
+        font-size: 1.0625rem;
+        font-weight: 300;
+        color: $darkBlue;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    &__description {
+        font-size: 0.8125rem;
+        line-height: 1.4;
+    }
+}
